@@ -2,7 +2,7 @@ name: Check Assignment
 on:
   push:
       tags:
-        - handin
+        - handin*
 
 jobs:
   Test-Execution:
