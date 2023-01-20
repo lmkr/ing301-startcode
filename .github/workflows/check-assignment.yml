@@ -1,5 +1,8 @@
 name: Check Assignment
-on: [push]
+on:
+  push:
+      tags:
+        - handin
 
 jobs:
   Test-Execution:
