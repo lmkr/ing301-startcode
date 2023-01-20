@@ -22,13 +22,8 @@ jobs:
         run: |
           pytest . --junitxml=assignment.xml
         working-directory: .
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2
-        if: always()
-        with:
-          junit_files: "*.xml"
       - name: Write Run Summary
         if: always()
         run: |
-          echo "# Autograding Asssignment 2" >> $GITHUB_STEP_SUMMARY
+          echo "# Autograding Asssignment" >> $GITHUB_STEP_SUMMARY
       
