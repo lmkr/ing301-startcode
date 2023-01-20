@@ -22,8 +22,4 @@ jobs:
         run: |
           pytest . --junitxml=assignment.xml
         working-directory: .
-      - name: Write Run Summary
-        if: always()
-        run: |
-          echo "# Autograding Asssignment" >> $GITHUB_STEP_SUMMARY
       
